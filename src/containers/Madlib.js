@@ -18,8 +18,7 @@ export default class Madlib extends Component{
     }));
   }
 
-  handleClear = ({ event }) => {
-    event.preventDefault();
+  handleClear = () => {
     this.setState({
       showResult: false,
       words: [],
