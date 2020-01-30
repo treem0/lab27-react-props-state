@@ -59,7 +59,7 @@ export default class Madlib extends Component{
     const { showResult } = this.state;
     return (
       <>
-        {!showResult && <Form onSubmit={this.handleSubmit} onChange={this.handleChange} />}
+        {!showResult && <Form onSubmit={this.handleSubmit} onChange={this.handleChange} onClick={this.handleClear} />}
         {showResult && <Result words={this.state.words} closeResult={this.toggleResult} />}
       </>
     );
