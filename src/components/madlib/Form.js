@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Form = ({ onSubmit, onChange, onClick }) => (
-  <form onSubmit={onSubmit}>
+  <form>
     <input onChange={onChange} name="0" type="text" placeholder="adjective" />
     <input onChange={onChange} name="1" type="text" placeholder="noun" />
     <input onChange={onChange} name="2" type="text" placeholder="verb, past tense" />
@@ -15,7 +15,7 @@ const Form = ({ onSubmit, onChange, onClick }) => (
     <input onChange={onChange} name="9" type="text" placeholder="adverb" />
     <input onChange={onChange} name="10" type="text" placeholder="verb, past tense" />
     <input onChange={onChange} name="11"type="text" placeholder="adjective" />
-    <button>Create Madlib</button>
+    <button onClick={onSubmit}>Create Madlib</button>
     <button onClick={onClick}>Clear</button>
   </form>
 );
