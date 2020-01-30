@@ -1,0 +1,8 @@
+.Form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(68, 66, 66);
+        color: whitesmoke;
+        flex-wrap: wrap;
+}
